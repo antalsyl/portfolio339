@@ -1,0 +1,142 @@
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  
+}
+.skip a:focus{
+    top:0;
+
+  }
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{ 
+   display: inline-block;
+   padding-right: 20px;
+   text-decoration: none;
+}
+
+nav li:hover{
+  text-decoration: underline;
+}
+
+nav a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+li:nth-child(2){
+  text-decoration: underline;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+h1{
+  text-align: center;
+	font-size: 42px;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+
+    color: #2c2c2c;
+    background-color: #EED2EE;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #DDA0DD, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+  }
+
+
+body{
+	background-color: #EED2EE;
+}
+
+footer{
+  background-color: black;
+  color: white; 
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+
+.nav{
+  text-align: left;
+  vertical-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  background-color: #663399;
+  padding: 20px 0; 
+  text-align: left; 
+}
+
+.desc{
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+
+}
+
+.gallery{
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+ img{
+  border: solid black 3px;
+  filter: brightness(85%);
+ }
+
+  img:hover{
+    border: solid white 4px;
+    filter: brightness(110%);
+  }
+
+  @media screen and (min-width: 800px){
+
+   .nav{
+    text-align: right;
+   }
+ }
+
+ @media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; 
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: default; 
+    transition: 
+    z-index: 1;
+
+  } 
+}
+

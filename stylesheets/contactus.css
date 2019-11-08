@@ -1,0 +1,186 @@
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  
+}
+.skip a:focus{
+    top:0;
+
+  }
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{ 
+   display: inline-block;
+   padding-right: 20px;
+   text-decoration: none;
+}
+
+nav li:hover{
+  text-decoration: underline;
+}
+
+nav a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+li:nth-child(4){
+  text-decoration: underline;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+h1{
+    text-align: center;
+    font-size: 42px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+     color: #2c2c2c;
+    background-color: #EED2EE;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #DDA0DD, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+body{
+    background-color: #EED2EE;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.nav{
+  text-align: left;
+  vertical-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  background-color: #663399;
+  padding: 20px 0; 
+  text-align: left; 
+}
+       
+.header {
+    color: #663399;
+    font-size: 20px;
+    padding: 10px;
+        }
+
+
+form{
+    display:inline-block;
+            width: 70%;
+            padding-left: 50px;
+        }
+
+.contactus-text{
+  font-size: 18px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 20px;
+
+}
+.contactus-img{
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+}
+
+img{
+  border: solid black 5px;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+
+@media screen and (min-width: 1000px){
+  
+.nav{
+  text-align: right;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: 70px auto;
+  grid-template-columns: auto auto auto;
+}
+ 
+form{
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+
+.contactus-text{
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+
+.contactus-img{
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 3;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; 
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: default; 
+    transition: 
+    z-index: 1;
+
+  } 
+}
+
+
+
+
+  
